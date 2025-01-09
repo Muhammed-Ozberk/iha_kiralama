@@ -121,3 +121,7 @@ Admin paneline /admin adresinden erişilebilir.
 - Sadece admin kullanıcı yeni kullanıcı ekleyebilir.
 - Tüm gerekli kütüphaneler `requirements.txt` dosyasında listelenmiştir.
 - Docker ortamında tüm ayarlar önceden yapılandırılmıştır, ekstra kurulumlara gerek yoktur.
+
+** Projeden Görüntüler 
+![List Air Vehicle Sayfası](https://drive.google.com/uc?export=view&id=1__yFU55Q1unN5Mvo_lUGQYPoHUJmBK1l)
+
