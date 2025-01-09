@@ -8,10 +8,9 @@ Air Vehicle Management System (AVMS), uçak ve parçalarının yönetildiği, ku
 ## Özellikler
 
 ### Accounts
+- DataSeed yapısı kurgulanarak proje çalıştırıldığında takımlar ve admin kullanıcısı otomatik yapılandırıldı.
 - Kullanıcı girişi yönetildi.
-- Admin kullanıcı yetkilendirme ve yönetim ekranı oluşturuldu.
-- Takım ve izin yönetimi yapıldı.
-  - Her takım kendi parçasını üretebilir.
+- Kullanıcı yetkilendirmeleri işlemleri tanımlandı. 
 - Admin kullanıcı paneline `/admin` adresi üzerinden erişilebilir.
 
 ### Aircrafts (Hava Araçları)
@@ -112,6 +111,11 @@ Bu proje için kullanılan teknolojiler ve araçlar:
 API dokümantasyonu Swagger ile sağlanmıştır. Proje çalıştırıldıktan sonra Swagger arayüzüne `/swagger` adresinden ulaşabilirsiniz.
 
 ---
+
+## Admin Paneli ve Kullanıcı Bilgileri
+Admin paneline /admin adresinden erişilebilir.
+- Kullanıcı adı: **admin**
+- Şifre: **admin123**
 
 ## Ek Bilgiler
 - Sadece admin kullanıcı yeni kullanıcı ekleyebilir.
