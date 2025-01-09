@@ -117,11 +117,42 @@ Admin paneline /admin adresinden erişilebilir.
 - Kullanıcı adı: **admin**
 - Şifre: **admin123**
 
+## Projeden Görüntüler 
+
+- Index
+![Index](https://drive.google.com/uc?export=view&id=1MjiTyU1U48pFOijxRufzu8vvva4Aznsy)
+
+- Index Edit
+![Index Edit](https://drive.google.com/uc?export=view&id=1NuOzuTL-J6Wxz1wEP01m-kmpdiMgXAjO)
+
+- Create Part
+![Create Part](https://drive.google.com/uc?export=view&id=1IJkrjg5eQtU59ORVKNwogSQfVgHi3zSG)
+
+- Create Vehicle
+![Create Vehicle](https://drive.google.com/uc?export=view&id=1OJK2eiOG93m3U-2Cy8bbuLd-h4XcMSU1)
+
+- Create Vehicle Toast Message
+![Proje Görüntüsü](https://drive.google.com/uc?export=view&id=1rMfdvk4Bs83RxXsdDH199BazIGRtAoKM)
+
+- List Air Vehicle Sayfası
+![List Air Vehicle Sayfası](https://drive.google.com/uc?export=view&id=1__yFU55Q1unN5Mvo_lUGQYPoHUJmBK1l)
+
+## Proje Videosu
+[Proje Videosu İzle](https://drive.google.com/file/d/1ZVUvkjKD_qvCz0-I376OjctNuWGw390c/view?usp=sharing)
+
+
 ## Ek Bilgiler
 - Sadece admin kullanıcı yeni kullanıcı ekleyebilir.
 - Tüm gerekli kütüphaneler `requirements.txt` dosyasında listelenmiştir.
 - Docker ortamında tüm ayarlar önceden yapılandırılmıştır, ekstra kurulumlara gerek yoktur.
 
-** Projeden Görüntüler 
-![List Air Vehicle Sayfası](https://drive.google.com/uc?export=view&id=1__yFU55Q1unN5Mvo_lUGQYPoHUJmBK1l)
+
+
+
+
+
+
+
+
+
 
