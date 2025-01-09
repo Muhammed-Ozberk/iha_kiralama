@@ -1,0 +1,65 @@
+# Air Vehicle Management System
+Proje Tanımı
+Air Vehicle Management System (AVMS), uçak ve parçalarının yönetildiği, kullanıcıların uçak ve parçaları kolayca oluşturup listeleyebileceği bir web uygulamasıdır. Bu sistem, yöneticilerin hava araçlarını yönetmesi ve her bir hava aracına ait parçaları düzenlemesi için kullanılır. Django web framework'ü kullanılarak geliştirilmiştir.
+ 
+## Özellikler  
+Hava Araçları Listesi: Mevcut hava araçları ve onlara ait parçaların listesini görüntüleme.
+Kullanıcı Yönetimi: Sisteme giriş yapan kullanıcı bilgileri görüntülenebilir.
+- **Login Sayfası:** Kullanıcıların sisteme giriş yapabilmeleri için giriş ekranı.
+- **Dashboard:** Ana sayfa üzerinden parçalar listelenir.
+- **Create Part:** Yeni bir parça oluşturulur ve mevcut parçaları düzenlenir.
+- **Create Air Vehicle:** Yeni hava aracı oluşturulur.
+- **List Air Vehicle:** Hava araçları listelenir.
+## Gereksinimler
+
+Bu projeyi çalıştırmak için aşağıdaki gereksinimlere ihtiyacınız olacak:
+  
+- [Python](https://www.python.org/downloads/) 
+- [Docker](https://www.docker.com)
+- Django  
+- PostgreSQL 
+  
+## Proje Kurulumu
+İlgili kurulumlar için aşağıda verilen kodları aşağıdaki adımları izleyin:
+
+- Docker'ın Çalışması:
+
+``` bash 
+docker-compose up -d 
+```
+- Sanal Ortam Kurulumu:
+
+``` bash 
+python3 -m venv env
+``` 
+- Bağımlılıkların Yüklenmesi:
+ 
+``` bash 
+pip install -r requirements.txt
+``` 
+
+- Veritabanı Yapılandırması:
+
+Django'nun veritabanı ayarlarını (settings.py dosyasındaki DATABASES bölümünde) yapılandırın.
+Aşağıdaki komutla veritabanını oluşturun:
+
+``` bash 
+python manage.py migrate
+``` 
+- Projenin ayağa kaldırılması:
+
+``` bash 
+python manage.py runserver
+``` 
+
+- Proje Başlatıldıktan Sonra: Tarayıcınızda http://127.0.0.1:8000/ adresine giderek uygulamayı kullanabilirsiniz.
+
+## Geliştirme Ortamı
+Bu proje için kullanılan teknolojiler ve araçlar:
+
+- **Python**: Web uygulama geliştirme için ana dil.
+- **Django**: Web framework'ü, ORM ve yönetim paneli desteği.
+- **HTML/CSS/JS**: Kullanıcı arayüzü için.
+- **jQuery**: Ajax istekleri ve DOM manipülasyonu için.
+- **Bootstrap**: Sayfa düzeni ve stil için.
+- **DataTables**: Tablo verilerini yönetmek ve görüntülemek için.

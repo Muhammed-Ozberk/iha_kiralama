@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Create Part</title>
+
+    <!-- Custom fonts for this template-->
+    <link
+      href="../static/vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+
+    <!-- Custom styles for this template-->
+    <link href="../static/css/sb-admin-2.min.css" rel="stylesheet" />
+  </head>
+
+  <body id="page-top">
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <ul
+        class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion"
+        id="accordionSidebar"
+      >
+        <a
+          class="sidebar-brand d-flex align-items-center justify-content-center"
+          href="index.html"
+        >
+          <div class="sidebar-brand-icon rotate-n-15">
+            <i class="fas fa-laugh-wink"></i>
+          </div>
+          <div class="sidebar-brand-text mx-3">Baykar</div>
+        </a>
+        <hr class="sidebar-divider my-0" />
+        <li class="nav-item">
+          <a class="nav-link" href="/">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/list-part">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>List Part</span></a
+          >
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/create-part">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Create Part</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/create-air-vehicle">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Create Air Vehicle</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/list-air-vehicle">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>List Air Vehicle</span></a
+          >
+        </li>
+        <hr class="sidebar-divider d-none d-md-block" />
+      </ul>
+
+      <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
+        <!-- Main Content -->
+        <div id="content">
+          <!-- Topbar -->
+          <nav
+            class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow"
+          >
+            <!-- Sidebar Toggle (Topbar) -->
+            <button
+              id="sidebarToggleTop"
+              class="btn btn-link d-md-none rounded-circle mr-3"
+            >
+              <i class="fa fa-bars"></i>
+            </button>
+
+            <!-- Topbar Navbar -->
+            <ul class="navbar-nav ml-auto">
+              <div class="topbar-divider d-none d-sm-block"></div>
+
+              <!-- Nav Item - User Information -->
+              <li class="nav-item dropdown no-arrow">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="userDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span
+                    class="mr-2 d-none d-lg-inline text-gray-600 small"
+                    id="user-name"
+                    >Douglas McGee</span
+                  >
+                  <!-- Burada kullanıcı adı gösterilecek -->
+                  <img
+                    class="img-profile rounded-circle"
+                    src="../static/img/undraw_profile.svg"
+                  />
+                </a>
+                <!-- Dropdown - User Information -->
+                <div
+                  class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                  aria-labelledby="userDropdown"
+                >
+                  <a class="dropdown-item" href="#">
+                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Profile
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-toggle="modal"
+                    data-target="#logoutModal"
+                  >
+                    <i
+                      class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"
+                    ></i>
+                    Logout
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <!-- End of Topbar -->
+
+          <!-- Begin Page Content -->
+          <div class="container-fluid">
+            <div
+              class="d-sm-flex align-items-center justify-content-between mb-4"
+            >
+              <h1 class="h3 mb-0 text-gray-800">Create Part</h1>
+            </div>
+
+            <!-- Create Part Form -->
+            <form id="create-part-form">
+              <div class="form-group">
+                <label for="part_type">Part Type</label>
+                <select
+                  class="form-control"
+                  id="part_type"
+                  name="part_type"
+                  required
+                >
+                  <!-- Part types will be populated dynamically -->
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="aircraft_model">Aircraft Model</label>
+                <select
+                  class="form-control"
+                  id="aircraft_model"
+                  name="aircraft_model"
+                  required
+                >
+                  <!-- Aircraft models will be populated dynamically -->
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="quantity_in_stock">Quantity in Stock</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="quantity_in_stock"
+                  name="quantity_in_stock"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">Create Part</button>
+            </form>
+
+            <div id="error-message" class="mt-3 text-danger"></div>
+            <div id="success-message" class="mt-3 text-success"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Logout Modal-->
+    <div
+      class="modal fade"
+      id="logoutModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button
+              class="close"
+              type="button"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Select "Logout" below if you are ready to end your current session.
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-secondary"
+              type="button"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <!-- Changed href to class logout -->
+            <a class="btn btn-primary logout" href="#">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="../static/vendor/jquery/jquery.min.js"></script>
+    <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="../static/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="../static/js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="../static/vendor/chart.js/Chart.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // Logout butonuna tıklama olayını dinlenir
+        $(".logout").on("click", function (e) {
+          e.preventDefault();
+
+          $.ajax({
+            type: "GET",
+            url: "/api/accounts/logout/", // Logout işlemi için API endpoint'i
+            success: function (response) {
+              if (response.message) {
+                window.location.href = "/";
+              }
+            },
+            error: function (xhr, status, error) {
+              $("#error-message").text(
+                xhr.responseJSON.error || "An error occurred. Please try again."
+              );
+            },
+          });
+        });
+      });
+
+      $(document).ready(function () {
+        $.ajax({
+          type: "GET",
+          url: "/api/accounts/user-info/", // Kullanıcı bilgilerini döndüren endpoint
+          success: function (response) {
+            const username = response.first_name + " " + response.last_name;
+            $("#user-name").text(response.username);
+          },
+          error: function (xhr, status, error) {
+            console.log("Kullanıcı bilgileri alınamadı: " + error);
+          },
+        });
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $.ajax({
+          type: "GET",
+          url: "/api/part_types",
+          success: function (response) {
+            // 'part_type' dropdown'ına eklenir
+            response.forEach(function (item) {
+              $("#part_type").append(new Option(item.name, item.id));
+            });
+          },
+          error: function (xhr, status, error) {
+            console.log("Error fetching part types: " + error);
+          },
+        });
+
+        $.ajax({
+          type: "GET",
+          url: "/api/aircraft_models/", // Uçak modellerini almak için API endpoint'i
+          success: function (response) {
+            // Gelen uçak modellerini 'aircraft_model' dropdown'ına eklenir
+            response.forEach(function (item) {
+              $("#aircraft_model").append(new Option(item.name, item.id));
+            });
+          },
+          error: function (xhr, status, error) {
+            console.log("Error fetching aircraft models: " + error);
+          },
+        });
+
+        $("#create-part-form").on("submit", function (e) {
+          e.preventDefault(); // Formun normal submit davranışını engellenir
+
+          const formData = {
+            part_type: parseInt($("#part_type").val(), 10),
+            aircraft_model: parseInt($("#aircraft_model").val(), 10),
+            quantity_in_stock: parseInt($("#quantity_in_stock").val(), 10),
+          };
+
+          // CSRF token'ını almak için fonksiyon
+          function getCSRFToken() {
+            var csrfToken = document.cookie.match(/csrftoken=([\w-]+)/);
+            return csrfToken ? csrfToken[1] : "";
+          }
+
+          // Part oluşturan endpoint POST isteği gönderilir
+          $.ajax({
+            type: "POST",
+            url: "/api/parts/", // Part oluşturma için API endpoint'i
+            data: JSON.stringify(formData), // Form verilerini JSON formatında gönderilir
+            contentType: "application/json",
+            headers: {
+              "X-CSRFToken": getCSRFToken(),
+            },
+            success: function (response) {
+              $("#success-message").text("Part created successfully!");
+              $("#error-message").empty();
+            },
+            error: function (xhr, status, error) {
+              $("#error-message").text(
+                xhr.responseJSON.error || "An error occurred. Please try again."
+              );
+            },
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
