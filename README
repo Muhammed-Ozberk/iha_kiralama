@@ -11,7 +11,7 @@ Air Vehicle Management System (AVMS), uçak ve parçalarının yönetildiği, ku
 - Kullanıcı girişi yönetildi.
 - Admin kullanıcı yetkilendirme ve yönetim ekranı oluşturuldu.
 - Takım ve izin yönetimi yapıldı.
-- Her takım kendi parçasını üretebilir.
+  - Her takım kendi parçasını üretebilir.
 - Admin kullanıcı paneline `/admin` adresi üzerinden erişilebilir.
 
 ### Aircrafts (Hava Araçları)
