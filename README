@@ -1,9 +1,9 @@
 # Air Vehicle Management System
 
-## Proje Tanımı
+## Proje Tanımı 
 Air Vehicle Management System (AVMS), uçak ve parçalarının yönetildiği, kullanıcıların uçak ve parçaları kolayca oluşturup listeleyebileceği bir web uygulamasıdır. Bu sistem, yöneticilerin hava araçlarını yönetmesi ve her bir hava aracına ait parçaları düzenlemesi için kullanılır. Django web framework'ü kullanılarak geliştirilmiştir.
 
----
+
 
 ## Özellikler
 
